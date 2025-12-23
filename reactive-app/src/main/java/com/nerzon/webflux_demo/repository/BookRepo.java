@@ -1,6 +1,6 @@
 package com.nerzon.webflux_demo.repository;
 
-import com.nerzon.webflux_demo.entity.Book;
+import com.nerzon.entity.Book;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

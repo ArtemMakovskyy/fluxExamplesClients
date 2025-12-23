@@ -1,13 +1,15 @@
 package com.nerzon.rest_api.controller;
 
-import com.nerzon.rest_api.entity.Book;
+import com.nerzon.entity.Book;
 import com.nerzon.rest_api.repository.BookRepo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 @RestController
 @RequestMapping("/api/books")
+@Slf4j
 public class BookController {
     private final BookRepo bookRepo;
 
@@ -17,7 +19,7 @@ public class BookController {
 
     @GetMapping("/{id}")
     public Book getBookById(@PathVariable String id) {
-        System.out.println(System.currentTimeMillis());
+        log.info("currentTimeMillis: " + System.currentTimeMillis());
         return bookRepo.findById(id);
     }
 
@@ -28,7 +30,7 @@ public class BookController {
 
     @PostMapping
     public Book addNewBook(@RequestBody Book book) {
-        System.out.println(System.currentTimeMillis());
+        log.info("currentTimeMillis: " + System.currentTimeMillis());
         return bookRepo.save(book);
     }
 }

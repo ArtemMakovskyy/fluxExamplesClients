@@ -1,7 +1,7 @@
 package com.nerzon.rest_api.repository;
 
 
-import com.nerzon.rest_api.entity.Book;
+import com.nerzon.entity.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;

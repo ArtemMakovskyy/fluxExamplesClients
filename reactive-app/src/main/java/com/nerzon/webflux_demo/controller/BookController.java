@@ -1,8 +1,7 @@
 package com.nerzon.webflux_demo.controller;
 
-import com.nerzon.webflux_demo.entity.Book;
+import com.nerzon.entity.Book;
 import com.nerzon.webflux_demo.repository.BookRepo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

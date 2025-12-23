@@ -6,7 +6,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Наслідуємось від ROOT -->
     <parent>
         <groupId>com.nerzon</groupId>
         <artifactId>flux</artifactId>
@@ -18,6 +17,13 @@
     <name>test-client</name>
 
     <dependencies>
+        <!-- common module -->
+        <dependency>
+            <groupId>com.nerzon</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>

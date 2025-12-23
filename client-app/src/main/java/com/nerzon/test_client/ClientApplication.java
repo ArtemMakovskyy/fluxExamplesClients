@@ -1,6 +1,6 @@
 package com.nerzon.test_client;
 
-import com.nerzon.test_client.entity.Book;
+import com.nerzon.entity.Book;
 import com.nerzon.test_client.service.RandomTextGenerator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
-
 
 @SpringBootApplication
 public class ClientApplication implements CommandLineRunner {
