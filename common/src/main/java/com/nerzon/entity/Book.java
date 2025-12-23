@@ -4,8 +4,8 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor // Генерирует public Book() {}
-@AllArgsConstructor // Генерирует конструктор со всеми полями
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class Book {
