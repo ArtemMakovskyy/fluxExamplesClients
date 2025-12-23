@@ -21,7 +21,7 @@ public class RestBookClient {
         );
     }
 
-    public Book saveBook(int id) {
+    public Book getBook(int id) {
         return restTemplate.getForObject(
                 "http://localhost:8080/api/books/{id}",
                 Book.class,

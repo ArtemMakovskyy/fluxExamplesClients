@@ -24,7 +24,7 @@ public class ReactiveBookClient {
                 .bodyToMono(Book.class);
     }
 
-    public Mono<Book> saveBook(int id) {
+    public Mono<Book> getBook(int id) {
         return webClient.get()
                 .uri("/api/books/{id}", id)
                 .retrieve()
