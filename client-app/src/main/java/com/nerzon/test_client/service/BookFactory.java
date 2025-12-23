@@ -1,6 +1,6 @@
 package com.nerzon.test_client.service;
 
-import com.nerzon.entity.Book;
+import com.nerzon.dto.BookDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -13,8 +13,8 @@ public class BookFactory {
 
     private final RandomTextGenerator textGenerator;
 
-    public Book create(int id) {
-        return new Book(
+    public BookDto create(int id) {
+        return new BookDto(
                 String.valueOf(id),
                 textGenerator.randomText(TITLE_LENGTH),
                 textGenerator.randomText(AUTHOR_LENGTH)

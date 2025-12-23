@@ -68,7 +68,7 @@ public class LoadTestRunner implements CommandLineRunner {
 
         // Отримання 500 книг
         for (int i = 510; i < 1010; i++) {
-            restClient.getBook(i);
+            restClient.getBook(String.valueOf(i));
         }
 
         long end = System.currentTimeMillis();
@@ -86,7 +86,7 @@ public class LoadTestRunner implements CommandLineRunner {
 
         // Отримання 500 книг
         for (int i = 1011; i < 1511; i++) {
-            feignClient.getBook(i);
+            feignClient.getBook(String.valueOf(i));
         }
 
         long end = System.currentTimeMillis();
