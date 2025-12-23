@@ -9,14 +9,14 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class HttpClientConfig {
 
     @Bean
-    public WebClient webFluxClient() {
-        return WebClient.builder()
-                .baseUrl("http://localhost:8080")
-                .build();
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 
     @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
+    public WebClient webClient() {
+        return WebClient.builder()
+                .baseUrl("http://localhost:8080")
+                .build();
     }
 }
