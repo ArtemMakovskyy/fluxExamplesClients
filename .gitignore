@@ -1,0 +1,10 @@
+/.idea/
+/rest-app/mvnw.cmd
+/rest-app/mvnw
+/reactive-app/mvnw.cmd
+/reactive-app/mvnw
+/client-app/mvnw.cmd
+/client-app/mvnw
+/client-app/.mvn/
+/reactive-app/.mvn/
+/rest-app/.mvn/
